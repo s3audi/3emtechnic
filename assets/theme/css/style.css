@@ -79,7 +79,7 @@ section {
   color: #ffffff; }
 
 .mbr-black {
-  color: #000000; }
+  color: #333333; }
 
 .mbr-bg-white {
   background-color: #ffffff; }
@@ -107,8 +107,11 @@ section {
 .mbr-regular {
   font-weight: 400; }
 
-.mbr-semibold {
+.mbr-medium {
   font-weight: 500; }
+
+.mbr-semibold {
+  font-weight: 600; }
 
 .mbr-bold {
   font-weight: 700; }
@@ -235,15 +238,6 @@ nav .mbr-section-btn {
 
 .btn.btn-md .mbr-iconfont, .btn.btn-md .mbr-iconfont {
   margin-right: 0.8rem; }
-
-.mbr-regular {
-  font-weight: 400; }
-
-.mbr-semibold {
-  font-weight: 500; }
-
-.mbr-bold {
-  font-weight: 700; }
 
 [type="submit"] {
   -webkit-appearance: none; }
@@ -430,7 +424,10 @@ nav .mbr-section-btn {
 .navbar-collapse {
   -webkit-flex-basis: 100%;
   -webkit-flex-grow: 1;
-  -webkit-align-items: center; }
+  -webkit-align-items: center;
+  max-height: 93.5vh; }
+  .navbar-collapse.show {
+    overflow: auto; }
 
 .nav-dropdown .link {
   padding: .667em 1.667em !important;
@@ -486,12 +483,25 @@ nav .mbr-section-btn {
 .jq-selectbox li {
   padding: 1.07em .5em; }
 
+input[type="range"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.mbr-background-video {
+  pointer-events: none; }
+
+.modal-dialog, .modal-content {
+  height: 100%; }
+
+.modal-dialog .carousel-inner {
+  height: 100%;
+  height: -webkit-fill-available;
+  height: fill-available; }
+
+.carousel-item {
+  text-align: center; }
+
+.carousel-item img {
+  margin: auto; }
+
 /*# sourceMappingURL=style.css.map */
-.engine {
-	position: absolute;
-	text-indent: -2400px;
-	text-align: center;
-	padding: 0;
-	top: 0;
-	left: -2400px;
-}
